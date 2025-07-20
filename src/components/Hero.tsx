@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown, Download, FileCode2, Github, Linkedin, Mail, Package2 } from 'lucide-react';
 import VisitorCounter from './VisitorCounter';
 
 const Hero = () => {
@@ -61,11 +61,11 @@ const Hero = () => {
             Turning complex problems into elegant solutions.
             <br />
             <span className="text-sm text-green-400 font-mono mt-2 block">
-              💡 Tip: Try the Konami Code (↑↑↓↓←→←→BA) or click the terminal icon!
+              💡 Tip: Try the Konami Code (↑↑↓↓←→←→BA) or click the terminal icon and type resume!
             </span>
           </p>
 
-          <div className="flex justify-center space-x-6 mb-12">
+          <div className="flex justify-center space-x-6 mb-4">
             <a
               href="https://github.com/imdeveshshukla"
               target="_blank"
@@ -87,6 +87,17 @@ const Hero = () => {
               className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition-all duration-300 hover:scale-110 border border-gray-600 hover:border-red-400"
             >
               <Mail className="w-6 h-6" />
+            </a>
+          </div>
+          <div className="flex justify-center mb-12">
+            <a
+              href="https://drive.google.com/file/d/195Dgz_0aTBC3roshszXFDdg8kcLMYtlk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 p-4 px-12 bg-gray-800 rounded-lg border border-gray-700 hover:border-blue-400 transition-all duration-300 hover:scale-105"
+            >
+              <FileCode2 className="w-6 h-6 text-blue-400" />
+              <span className="font-mono">Resume</span>
             </a>
           </div>
 

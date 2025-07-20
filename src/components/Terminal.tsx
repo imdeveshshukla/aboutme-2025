@@ -26,7 +26,7 @@ const Terminal = () => {
       '  contact     - Get contact information',
       '  github      - Open GitHub profile',
       '  linkedin    - Open LinkedIn profile',
-      '  resume      - Download resume',
+      '  resume      - Open resume',
       '  clear       - Clear terminal',
       '  whoami      - Display current user',
       '  date        - Show current date',
@@ -80,7 +80,7 @@ const Terminal = () => {
     ls: ['about/', 'skills/', 'projects/', 'experience/', 'contact/'],
     github: ['Opening GitHub profile...'],
     linkedin: ['Opening LinkedIn profile...'],
-    resume: ['Resume download initiated...'],
+    resume: ['Resume Open initiated...'],
     clear: [],
     exit:[]
   };
