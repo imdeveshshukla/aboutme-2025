@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Github, Code, Database, Zap } from 'lucide-react';
+import { ExternalLink, Github, Code, Database, Zap, NotebookPen, MessageCircle, Package } from 'lucide-react';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
@@ -36,7 +36,74 @@ const Projects = () => {
       liveUrl: 'https://writemail.vercel.app/',
       githubUrl: 'https://github.com/imdeveshshukla/cold-email-backend',
       icon: <Zap className="w-6 h-6" />
+    },
+    {
+      title: 'Dev Note',
+      subtitle: 'Secure Note Taking App',
+      description: 'A web-based note-taking app that enables users to create and organize notes securely with JWT-based authentication and serverless deployment.',
+      longDescription: 'Built with React.js, Redux, and Node.js, Dev Note offers a secure platform for organizing personal notes. Authentication is handled using JWT, and the state is managed via Redux. The backend leverages PostgreSQL and is deployed using Cloudflare Workers for a serverless, globally distributed experience.',
+      tech: ['React.js', 'Redux', 'Node.js', 'PostgreSQL', 'JWT', 'Cloudflare Workers'],
+      achievements: [
+        'Implemented secure login using JWT authentication',
+        'Utilized Redux for scalable and consistent state management',
+        'Deployed using Cloudflare Workers for a serverless, low-latency experience',
+        'Designed clean and responsive UI for managing notes efficiently'
+      ],
+      liveUrl: 'https://dev-note-ivory.vercel.app/', 
+      githubUrl: 'https://github.com/imdeveshshukla/devnote',
+      icon: <NotebookPen className="w-6 h-6" />
+    },
+    {
+      title: 'Chat App',
+      subtitle: 'Real-Time Messaging Platform',
+      description: 'A real-time chat application enabling users to join rooms, send messages instantly, and receive live notifications.',
+      longDescription: 'This chat application was built using JavaScript, Node.js, and Express.js, with MongoDB for data persistence and Socket.io for real-time communication. It allows users to create or join rooms and exchange messages with instant updates. Bootstrap was used to create a responsive and clean UI.',
+      tech: ['JavaScript', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Bootstrap'],
+      achievements: [
+        'Implemented real-time communication with Socket.io',
+        'Enabled creation and privacy of chat rooms',
+        'Used MongoDB to persist user and chat data',
+        'Designed responsive UI with Bootstrap for smooth UX across devices'
+      ],
+      liveUrl: 'https://chatwebapp-cnr3.onrender.com/', // Add the live URL here if hosted
+      githubUrl: 'https://github.com/imdeveshshukla/ChatWebApp', // Add GitHub repo link here
+      icon: <MessageCircle className="w-6 h-6" /> // You can change to <MessageSquare /> or any other icon you prefer
+    },
+    {
+      title: 'Knapsack',
+      subtitle: 'Travel Luggage Optimizer',
+      description: 'A web-based tool that helps users select the most valuable items to pack within a weight limit using the knapsack algorithm.',
+      longDescription: 'Built with HTML, CSS, and JavaScript, this tool implements the classic knapsack algorithm to assist users in optimizing travel luggage. Users input items along with their weights and values, and the application calculates the most efficient combination that maximizes value within the weight constraint.',
+      tech: ['HTML', 'CSS', 'JavaScript', 'Knapsack Algorithm'],
+      achievements: [
+        'Implemented the knapsack optimization algorithm in JavaScript',
+        'Created an intuitive UI for entering item weights and values',
+        'Provided visual feedback to show optimal selections',
+        'Helped users make data-driven travel packing decisions'
+      ],
+      liveUrl: '', // Add if hosted
+      githubUrl: 'https://github.com/imdeveshshukla/KnapsackApp',
+      icon: <Package className="w-6 h-6" /> // Or use <Suitcase /> if you want a luggage metaphor
+    },
+    {
+      title: 'More Projects',
+      subtitle: 'Explore My GitHub',
+      description: 'Discover additional projects, experiments, and contributions that showcase my journey as a developer.',
+      longDescription: 'In addition to the featured projects, I’ve worked on several other tools, mini-apps, and open-source contributions that reflect my curiosity and dedication to building useful software. From backend experiments to frontend prototypes — there’s more to explore.',
+      tech: ['Open Source', 'Mini Projects', 'Experiments', 'Learning by Building'],
+      achievements: [
+        'Built multiple small-scale utilities and tools',
+        'Contributed to personal and collaborative repos',
+        'Explored new stacks and patterns through side projects',
+        'Maintained consistent code quality and documentation'
+      ],
+      liveUrl: '', // Add if hosted
+      githubUrl: 'https://github.com/imdeveshshukla',
+      icon: <Github className="w-6 h-6" />
     }
+
+
+
   ];
 
   return (
@@ -72,7 +139,7 @@ const Projects = () => {
 
           {/* Project Details */}
           <div className="lg:col-span-2">
-            <div className="bg-gray-800 p-8 rounded-lg border border-gray-700">
+            <div className="bg-gray-800 p-8 rounded-lg border border-gray-700 h-[100%]">
               <div className="flex items-center gap-3 mb-4">
                 {projects[selectedProject].icon}
                 <h3 className="text-2xl font-bold text-green-400 font-mono">
@@ -111,7 +178,7 @@ const Projects = () => {
               </div>
 
               <div className="flex gap-4">
-                <a
+                {projects[selectedProject].liveUrl && <a
                   href={projects[selectedProject].liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -119,7 +186,7 @@ const Projects = () => {
                 >
                   <ExternalLink className="w-4 h-4" />
                   Live Demo
-                </a>
+                </a>}
                 <a
                   href={projects[selectedProject].githubUrl}
                   target="_blank"

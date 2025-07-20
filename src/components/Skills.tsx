@@ -45,7 +45,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gray-800/50">
+    <section id="skills" className="py-20 px-6 bg-gray-800/50 hidden md:block">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl font-bold text-center mb-16 font-mono">
           <span className="text-green-400">&gt;</span> Technical Skills
@@ -82,7 +82,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <h3 className="text-2xl font-semibold mb-6 font-mono">Achievements</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
@@ -98,7 +98,7 @@ const Skills = () => {
               <div className="text-gray-300">GPA in Master's</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

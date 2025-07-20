@@ -43,6 +43,7 @@ const Hero = () => {
   return (
     <>
       <section className="min-h-screen flex items-center justify-center px-6">
+        <VisitorCounter/>
         <div className="text-center max-w-4xl mx-auto">
           <div className="mb-8">
             <div className="text-2xl font-semibold text-white">
@@ -96,7 +97,6 @@ const Hero = () => {
             <ChevronDown size={32} />
           </button>
         </div>
-        <VisitorCounter />
       </section>
     </>
   );

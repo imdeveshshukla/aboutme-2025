@@ -24,7 +24,7 @@ const VisitorCounter = () => {
   }, []);
 
   return (
-    <div className="absolute lg:top-[13%] top-[7.5%] left-6 z-40 bg-gray-900 border border-gray-700 rounded-lg p-3 font-mono text-sm">
+    <div className="absolute left-6 bottom-6 z-40 bg-gray-900 border border-gray-700 rounded-lg p-3 font-mono text-sm">
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
           <Eye className="w-4 h-4 text-blue-400" />

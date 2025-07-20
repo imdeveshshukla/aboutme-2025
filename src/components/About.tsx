@@ -36,6 +36,14 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-6">
+            <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-purple-400 transition-all duration-300">
+              <Code className="w-8 h-8 text-purple-400 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 font-mono">Full-Stack Development</h3>
+              <p className="text-gray-400">
+                Creating end-to-end solutions with modern frameworks and best practices for maintainable code.
+              </p>
+            </div>
+            
             <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-green-400 transition-all duration-300">
               <Server className="w-8 h-8 text-green-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2 font-mono">Backend Architecture</h3>
@@ -49,14 +57,6 @@ const About = () => {
               <h3 className="text-xl font-semibold mb-2 font-mono">Database Design</h3>
               <p className="text-gray-400">
                 Optimizing database performance, implementing indexing strategies, and ensuring data integrity.
-              </p>
-            </div>
-
-            <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-purple-400 transition-all duration-300">
-              <Code className="w-8 h-8 text-purple-400 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 font-mono">Full-Stack Development</h3>
-              <p className="text-gray-400">
-                Creating end-to-end solutions with modern frameworks and best practices for maintainable code.
               </p>
             </div>
           </div>
