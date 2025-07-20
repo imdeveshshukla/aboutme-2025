@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Database, Server } from 'lucide-react';
 
 const About = () => {
@@ -43,7 +42,7 @@ const About = () => {
                 Creating end-to-end solutions with modern frameworks and best practices for maintainable code.
               </p>
             </div>
-            
+
             <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-green-400 transition-all duration-300">
               <Server className="w-8 h-8 text-green-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2 font-mono">Backend Architecture</h3>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { ExternalLink, Github, Code, Database, Zap, NotebookPen, MessageCircle, Package } from 'lucide-react';
+import { useState } from 'react';
+import { ExternalLink, Github, Database, Zap, NotebookPen, MessageCircle, Package } from 'lucide-react';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(0);
