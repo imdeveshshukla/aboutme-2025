@@ -13,7 +13,7 @@ const Projects = () => {
       tech: ['Node.js', 'React', 'Redux', 'PostgreSQL', 'Docker', 'Redis', 'Azure', 'GitHub Actions'],
       achievements: [
         'Enhanced user engagement by 20% through nested comments implementation',
-        'Implemented Redis caching for improved backend performance',
+        'Implemented Leetcode and codeforce integration for engagement',
         'Deployed with CI/CD pipelines using GitHub Actions',
         'Containerized backend with Docker and deployed on Azure'
       ],
