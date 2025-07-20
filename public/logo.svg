@@ -1,0 +1,35 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <circle cx="32" cy="32" r="32" fill="url(#gradient)" />
+  
+  <!-- Terminal window background -->
+  <rect x="8" y="12" width="48" height="36" rx="4" fill="#1a1a1a" stroke="#00FF41" stroke-width="1"/>
+  
+  <!-- Terminal header dots -->
+  <circle cx="14" cy="18" r="2" fill="#ff5f56"/>
+  <circle cx="22" cy="18" r="2" fill="#ffbd2e"/>
+  <circle cx="30" cy="18" r="2" fill="#27ca3f"/>
+  
+  <!-- Terminal prompt -->
+  <text x="12" y="32" font-family="monospace" font-size="8" fill="#00FF41">$</text>
+  
+  <!-- Dev6sh text -->
+  <text x="18" y="32" font-family="monospace" font-size="8" fill="#ffffff" font-weight="bold">dev6sh</text>
+  
+  <!-- Cursor -->
+  <rect x="50" y="26" width="1" height="8" fill="#00FF41">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Code brackets -->
+  <text x="12" y="44" font-family="monospace" font-size="6" fill="#00D4FF">&lt;/&gt;</text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2a2a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
